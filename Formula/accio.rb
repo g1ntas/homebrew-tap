@@ -7,16 +7,16 @@ class Accio < Formula
 
   if OS.mac?
     url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_macOS-64bit.tar.gz"
-    sha256 "6396decf36113381479367c88996df9a7ac314629e71b26ebad367c79d35bf56"
+    sha256 "5eaf172297675555c63f70b11ec3653b0348aef91fc6c144cae048dcd0bbc8a0"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_Linux-64bit.tar.gz"
-      sha256 "e13f75502cf66de4165b0561de929892d8df33bf863d330075a356a7a068fa8a"
+      sha256 "678e96881dd20d7461631fef3836a3d102b5ec307e49f9063da39874e0e52b92"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_Linux-ARM64.tar.gz"
-        sha256 "56aca16748f3f7ebfea631020e9d0e3722fb3dbb47e2583b34d4ff30e0450337"
+        sha256 "2025989560f60299d46fea5b5730cdfe43bedf66309e77e0bb3039d62fd37f33"
       else
       end
     end
