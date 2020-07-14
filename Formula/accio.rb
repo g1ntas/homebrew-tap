@@ -2,21 +2,21 @@
 class Accio < Formula
   desc "Accio is a flexible framework for boilerplate code generators"
   homepage "https://github.com/g1ntas/accio"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_macOS-64bit.tar.gz"
-    sha256 "5eaf172297675555c63f70b11ec3653b0348aef91fc6c144cae048dcd0bbc8a0"
+    url "https://github.com/g1ntas/accio/releases/download/v0.1.1/accio_0.1.1_macOS-64bit.tar.gz"
+    sha256 "2affc18916f7850911cf5b23f67480dcb50d0b49293d4150de24099ab9e6586c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_Linux-64bit.tar.gz"
-      sha256 "678e96881dd20d7461631fef3836a3d102b5ec307e49f9063da39874e0e52b92"
+      url "https://github.com/g1ntas/accio/releases/download/v0.1.1/accio_0.1.1_Linux-64bit.tar.gz"
+      sha256 "e20c851b11443fa705488af2d2efe426caa70d6825fb7eab36a0fd39bd443110"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/g1ntas/accio/releases/download/v0.1.0/accio_0.1.0_Linux-ARM64.tar.gz"
-        sha256 "2025989560f60299d46fea5b5730cdfe43bedf66309e77e0bb3039d62fd37f33"
+        url "https://github.com/g1ntas/accio/releases/download/v0.1.1/accio_0.1.1_Linux-ARM64.tar.gz"
+        sha256 "f8a5d14454d7f7181f08f299067c200cfbf98cb5be1f817cb63b23127c23985d"
       else
       end
     end
